@@ -1,0 +1,105 @@
+/* last section styling  */
+#section-last {
+    width: 100%;
+    min-height: 70vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 3rem;
+    padding-left: 1rem;
+}
+
+.last-info {
+    padding: 4rem;
+    margin-top: 5rem;
+    margin-left: 9rem;
+}
+
+.last-info>h2 {
+    color: black;
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.last-info a {
+    background-color: #E20303;
+    padding: 1.5rem 2.5rem;
+    font-weight: 500;
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: white;
+    transition: all .3s;
+    margin-top: 2rem;
+    display: inline-block;
+    transition: all .3s;
+}
+
+.last-info a:hover {
+    color: #ffff;
+    background-color: #000000;
+}
+
+.last-info a>i {
+    margin-left: 1.8rem;
+}
+
+.last-img {
+    width: 100%;
+    min-height: 100%;
+    background: url("../../../assets/landing/Ellipse.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+
+
+
+
+
+/* media queries  */
+
+@media only screen and (max-width:1300px) {
+    #section-last {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0;
+        min-height: 60vh;
+        padding-top: 1rem;
+    }
+
+    .last-img {
+        width: 100%;
+        height: 30vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top center;
+    }
+}
+
+/* mobile devices  */
+@media only screen and (max-width:700px) {
+
+    .last-info {
+        padding: 2rem;
+        margin: auto;
+        text-align: center;
+        margin-top: 0;
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-width:550px) {
+    html {
+        font-size: 80%;
+    }
+
+    .last-img {
+        background-position: top center;
+    }
+
+    .last-info {
+        padding: 3rem;
+    }
+
+
+
+}

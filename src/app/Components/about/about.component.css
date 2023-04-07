@@ -1,0 +1,259 @@
+#about-section {
+    background: linear-gradient(346.91deg, #101010 72.22%, #FF0F0F 149.41%);
+    width: 100%;
+    min-height: 60vh;
+}
+
+#about-section h4,
+h1 {
+    text-align: center;
+    color: white;
+    margin-top: 2.5rem;
+    font-size: 2rem;
+}
+
+#about-section h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+/* second section  */
+
+#about-info {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 5rem;
+}
+
+.about-hero-img {
+    width: 40rem;
+    margin: auto;
+}
+
+.about-hero-img img {
+    width: 100%;
+}
+
+.about-hero-info {
+    padding: 4rem;
+}
+
+.about-hero-info h2 {
+    font-size: 2.3rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.about-hero-info p {
+    font-size: 1.1rem;
+}
+
+/* third section vendors  */
+
+#about-service {
+    background-color: black;
+    padding: 3rem;
+}
+
+#about-service>h1 {
+    text-align: center;
+    margin-bottom: 3.5rem;
+}
+
+.services {
+    width: 100%;
+    display: flex;
+    padding: 0 4rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.services .service {
+    max-width: 25rem;
+    min-height: 20rem;
+    background-color: rgba(72, 72, 72, 0.6);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    padding: 2rem 1rem;
+    margin: 10px .8rem;
+}
+
+.services .service>img {
+    width: 4rem;
+    margin-bottom: 10px;
+}
+
+.services .service>p {
+    margin-top: 10px;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.services .service>h4 {
+    font-size: 1.3rem;
+}
+
+/* mission vision  */
+.mission-vision {
+    width: 100%;
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    flex-wrap: wrap;
+}
+
+.mission {
+    max-width: 25rem;
+    min-height: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    padding: 1rem;
+    margin: 10px .8rem;
+}
+
+.mission>p {
+    margin-top: 10px;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+/* last section styling  */
+#section-last {
+    width: 100%;
+    min-height: 70vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 3rem;
+    padding-left: 1rem;
+}
+
+.last-info {
+    padding: 4rem;
+    margin-top: 5rem;
+    margin-left: 9rem;
+}
+
+.last-info>h2 {
+    color: black;
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.last-info a {
+    background-color: var(--theme);
+    padding: 1.5rem 2.5rem;
+    font-weight: 500;
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: white;
+    transition: all .3s;
+    margin-top: 2rem;
+    display: inline-block;
+}
+
+.last-info a>i {
+    margin-left: 1.8rem;
+}
+
+.last-img {
+    width: 100%;
+    min-height: 100%;
+    background: url("../../../assets/landing/Ellipse.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+
+/* media queries for about page  */
+
+@media only screen and (max-width:1100px) {
+    #about-info {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 2rem;
+    }
+
+    .about-hero-img {
+        width: 35rem;
+    }
+
+    .about-hero-info {
+        padding: 1rem;
+    }
+
+    #about-service {
+        padding: 2rem 1rem;
+    }
+
+    .services .service {
+        min-height: 17rem;
+        padding: 1rem .8rem;
+    }
+
+    .services .service>img {
+        width: 3.5rem;
+    }
+
+    .services .service>p {
+        margin-bottom: .5rem;
+    }
+
+}
+
+@media only screen and (max-width:650px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+
+    .about-hero-img {
+        width: 25rem;
+    }
+
+    #about-info {
+        padding: 1rem;
+    }
+
+    .mission {
+        min-height: 10rem;
+    }
+
+}
+
+@media only screen and (max-width:450px) {
+    #about-section {
+        min-height: 40vh;
+    }
+
+    #hero-section {
+        min-height: 60vh;
+    }
+
+    #service-section {
+        padding: .5rem;
+    }
+
+    .services {
+        padding: 1rem;
+    }
+
+    #section-partner {
+        margin-bottom: 1rem;
+    }
+
+    .partner-img {
+        background-size: contain;
+    }
+
+}

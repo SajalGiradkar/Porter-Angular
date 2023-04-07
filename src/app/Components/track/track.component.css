@@ -1,0 +1,87 @@
+#track {
+    background-color: rgb(0, 0, 0);
+    min-height: 15%;
+}
+
+#track-hero {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5rem;
+    gap: 1rem;
+    margin-bottom: 10rem;
+    margin-left: 10rem;
+    justify-content: flex-start;
+}
+
+.track-img {
+    max-width: 27rem;
+    margin-right: 2rem;
+}
+
+.track-img img {
+    width: 100%;
+}
+
+.track-input h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+}
+
+.track-input label {
+    font-weight: 700;
+    display: inline-block;
+}
+
+.track-input-box {
+    color: black;
+    width: 35rem;
+    outline: none;
+    border: 1px solid rgba(128, 128, 128, 0.5);
+    border-radius: 5px;
+    padding: 1.5rem 1rem;
+    padding-right: 5rem;
+    display: block;
+    margin-top: 10px;
+    background-color: rgba(60, 0, 255, 0.07);
+}
+
+
+
+/* media queries for track page  */
+@media only screen and (max-width:1100px) {
+    #track-hero {
+        justify-content: center;
+        align-items: center;
+        padding: 3rem;
+        margin: auto;
+        margin-bottom: 10rem;
+    }
+
+    .track-img {
+        width: 20rem;
+        margin-right: 1rem;
+    }
+
+}
+
+@media only screen and (max-width:600px) {
+    #track {
+        padding: 2rem 0;
+    }
+
+    .track-input {
+        padding: 1rem 4rem;
+    }
+
+    .track-input h1 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .track-input-box {
+        width: 27rem;
+        padding-right: 2rem;
+    }
+}

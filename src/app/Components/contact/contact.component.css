@@ -1,0 +1,138 @@
+#contact-section {
+    background-color: black;
+}
+
+/* contact-hero-section styling  */
+.contact-hero-section {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 5rem;
+}
+
+.contact-header {
+    padding: 1.5rem;
+}
+
+.contact-header h1 {
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.contact-header h3 {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.contact-form {
+    width: 100%;
+    background-color: rgba(218, 218, 218, 0.4);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 2rem;
+}
+
+.input {
+    display: inline-block;
+    margin: 0 7px;
+    padding: 1rem 0;
+}
+
+.input input {
+    width: 100%;
+    border-radius: 5px;
+    padding: 1rem;
+    outline: none;
+    border: 2px solid rgb(182, 182, 182);
+    font-size: 1.2rem;
+    color: #000000;
+}
+
+.input label {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.input select {
+    width: 100%;
+    border-radius: 5px;
+    padding: 1rem;
+    outline: none;
+    border: 2px solid rgb(182, 182, 182);
+    font-size: 1.2rem;
+}
+
+.field5 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.field5 textarea {
+    width: 100%;
+    height: 100%;
+    resize: none;
+    border-radius: 5px;
+    padding: 1rem;
+    outline: none;
+    border: 2px solid rgb(182, 182, 182);
+    font-size: 1.2rem;
+}
+
+
+.contact-info .contacts {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 10px 0;
+    padding-right: 5rem;
+}
+
+.contact-info .contacts>p {
+    padding: 0 1rem;
+    font-size: 1.1rem;
+}
+
+.contact-info .contacts>img {
+    width: 4.5rem;
+    margin: 5px 1rem;
+}
+
+.field-submit {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    margin-top: 4rem;
+}
+
+.field-submit>input {
+    background-color: #E20303;
+    color: white;
+    border: none;
+    border-radius: 0;
+}
+
+
+/* contact page media queries  */
+
+@media only screen and (max-width:1150px) {
+    .contact-hero-section {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 2rem;
+    }
+}
+
+@media only screen and (max-width:700px) {
+    #contact-section {
+        padding: 2rem 0;
+    }
+    .contact-hero-section {
+        padding: 1rem;
+    }
+
+    .contact-form {
+        width: 100%;
+        padding: .7rem;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

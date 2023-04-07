@@ -1,0 +1,111 @@
+#footer .footer-div {
+    background-color: black;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    padding: 3.5rem 5rem;
+    position: sticky;
+    bottom: 0;
+}
+
+#footer small {
+    background-color: black;
+    color: rgb(184, 184, 184);
+    display: block;
+    text-align: right;
+    padding: 10px 6rem 1rem 0;
+}
+
+.footer-logo a>img {
+    width: 10rem;
+}
+
+.footer-links {
+    display: flex;
+    margin-right: 20rem;
+    margin-top: 1rem;
+}
+
+.footer-links li {
+    list-style: none;
+    margin: 0 10px;
+    font-size: .8rem;
+    font-weight: 500;
+}
+
+.footer-links li a {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: .5rem 0;
+}
+
+.social-icons a>i {
+    color: white;
+    padding: 13px 13px;
+    margin: 0 10px;
+    background-color: rgba(128, 128, 128, 0.5);
+    border-radius: 50%;
+}
+
+/* media queries of footer */
+
+@media only screen and (max-width:1200px) {
+    #footer .footer-div {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 3rem 4rem;
+    }
+}
+
+@media only screen and (max-width:1100px) {
+    .footer-links {
+        margin: 0;
+        display: flex;
+    }
+
+    .social-icons {
+        width: 100%;
+        margin: 1rem 0;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        text-align: center;
+    }
+
+}
+
+@media only screen and (max-width:700px) {
+    #footer .footer-div {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #footer small {
+        text-align: center;
+        padding: 10px;
+    }
+    .social-icons{
+        text-align: left;
+        margin: 1rem 0;
+    }
+
+    .social-icons a>i {
+        padding: 10px 10px;
+        margin: 10px 10px;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        grid-column-start: 1;
+        margin: 0;
+        margin-top: 1rem;
+        width: 100%;
+    }
+
+    .footer-logo {
+        width: 100%;
+        text-align: left;
+    }
+
+}

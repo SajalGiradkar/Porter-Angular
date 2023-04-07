@@ -1,0 +1,32 @@
+:root {
+    --bg: #F5F7FA;
+    --theme: #E20303;
+    --info: #EBEBEB;
+}
+
+.top-info {
+    background-color: var(--bg);
+    padding: 1rem 0;
+    padding-left: .5rem;
+}
+
+.top-info p {
+    display: inline-block;
+    margin-left: 1.5rem;
+    font-weight: 500;
+    font-size: .7rem;
+    color: black;
+}
+
+@media only screen and (max-width:750px) {
+    .top-info p {
+        display: block;
+        margin: 0;
+        font-size: .8rem;
+        text-align: center;
+    }
+
+    .top-info .hide-mobile {
+        display: none;
+    }
+}
